@@ -22,7 +22,9 @@ export default {
         { name: '三角形角标' },
         { name: '步骤条' },
         { name: '图片旋转'},
-        { name: '国际化'}
+        { name: '国际化'},
+        { name: '自动撑开动画'},
+        { name: 'TinyMCE'}
       ],
       curIndex: 0
     }

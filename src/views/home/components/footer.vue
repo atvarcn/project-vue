@@ -1,11 +1,17 @@
 <template>
   <div class="footer">
-    footer
+    <el-row>
+      <el-col :span="24" align="center">footer</el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {}
+  }
+}
 </script>
 
 <style lang="less" scoped>

@@ -1,7 +1,7 @@
 <template>
   <div class="i18n">
     <el-row class="i18n-row">
-      <el-col :span="24" align="left">
+      <el-col :span="24">
         <el-button type="primary" icon="el-icon-circle-plus-outline" size="medium">{{ $t("add") }}</el-button>
         <el-button type="danger" icon="el-icon-delete" size="medium">{{ $t("delete") }}</el-button>
         <el-button type="warning" icon="el-icon-edit" size="medium">{{ $t("modify") }}</el-button>
@@ -11,7 +11,7 @@
       </el-col>
     </el-row>
     <el-row class="remarks-row">
-      <el-col :span="24" align="left">
+      <el-col :span="24">
         <strong>备注：</strong>
         <br />
         遇到的问题：i18n版本和vue版本可能不匹配
