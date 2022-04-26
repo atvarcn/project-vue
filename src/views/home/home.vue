@@ -16,6 +16,8 @@
     <Animation v-show="curIndex === 4"></Animation>
     <!-- TinyMCE -->
     <Tinymce v-show="curIndex === 5"></Tinymce>
+    <!-- 设置字体大小 -->
+    <FontSize v-show="curIndex === 6"></FontSize>
   </div>
 </template>
 
@@ -28,9 +30,10 @@ import ImageRotate from './components/image-rotate.vue'
 import I18n from './components/i18n.vue'
 import Animation from './components/animation.vue'
 import Tinymce from './components/tinymce.vue'
+import FontSize from './components/font-size.vue'
 
 export default {
-  components: { Header, Footer, Angle, Step, ImageRotate, I18n, Animation, Tinymce },
+  components: { Header, Footer, Angle, Step, ImageRotate, I18n, Animation, Tinymce, FontSize },
   data() {
     return {
       curIndex: 0

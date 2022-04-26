@@ -24,7 +24,8 @@ export default {
         { name: '图片旋转'},
         { name: '国际化'},
         { name: '自动撑开动画'},
-        { name: 'TinyMCE'}
+        { name: 'TinyMCE'},
+        { name: '设置字体大小'}
       ],
       curIndex: 0
     }
