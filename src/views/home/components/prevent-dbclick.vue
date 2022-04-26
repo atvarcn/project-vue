@@ -23,12 +23,12 @@
           <el-form-item label="900毫秒">
             <el-button type="primary"
               :loading="shortLoading"
-              @click="dbclickloadingFn('shortLoading', 900)">{{ loadingCounter.shortLoading }}</el-button>
+              @click="dbclickloadingFn('shortLoading', 900)">{{ loadingCounter.shortLoading }} 次</el-button>
           </el-form-item>
           <el-form-item label="2000毫秒">
             <el-button type="warning"
               :disabled="longLoading"
-              @click="dbclickloadingFn('longLoading', 2000)">{{ loadingCounter.longLoading }}</el-button>
+              @click="dbclickloadingFn('longLoading', 2000)">{{ loadingCounter.longLoading }} 次</el-button>
           </el-form-item>
           <el-form-item label="重置点击次数">
             <el-button @click="loadingCounterResetFn">loadingCounterReset</el-button>
