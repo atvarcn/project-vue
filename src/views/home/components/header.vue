@@ -26,7 +26,8 @@ export default {
         { name: '自动撑开动画'},
         { name: 'TinyMCE'},
         { name: '设置字体大小'},
-        { name: '阻止按钮多次点击'}
+        { name: '阻止按钮多次点击'},
+        { name: 'AntV | X6'}
       ],
       curIndex: 0
     }

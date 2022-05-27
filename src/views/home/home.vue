@@ -20,6 +20,8 @@
     <FontSize v-show="curIndex === 6"></FontSize>
     <!-- 按钮阻止多次点击 -->
     <PreventDbclick v-show="curIndex === 7"></PreventDbclick>
+    <!-- antv-xsix -->
+    <AntvXsix v-if="curIndex === 8"></AntvXsix>
   </div>
 </template>
 
@@ -34,10 +36,11 @@ import Animation from './components/animation.vue'
 import Tinymce from './components/tinymce.vue'
 import FontSize from './components/font-size.vue'
 import PreventDbclick from './components/prevent-dbclick.vue'
+import AntvXsix from './components/antv-xsix.vue'
 
 export default {
   components: { Header, Footer, Angle, Step, ImageRotate, I18n,
-    Animation, Tinymce, FontSize, PreventDbclick },
+    Animation, Tinymce, FontSize, PreventDbclick, AntvXsix },
   data() {
     return {
       curIndex: 0
