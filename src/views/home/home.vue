@@ -22,6 +22,8 @@
     <PreventDbclick v-show="curIndex === 7"></PreventDbclick>
     <!-- antv-xsix -->
     <AntvXsix v-if="curIndex === 8"></AntvXsix>
+    <!-- antv-demo -->
+    <AntvDemo v-if="curIndex === 9"></AntvDemo>
   </div>
 </template>
 
@@ -37,10 +39,11 @@ import Tinymce from './components/tinymce.vue'
 import FontSize from './components/font-size.vue'
 import PreventDbclick from './components/prevent-dbclick.vue'
 import AntvXsix from './components/antv-xsix.vue'
+import AntvDemo from './components/antv-demo.vue'
 
 export default {
   components: { Header, Footer, Angle, Step, ImageRotate, I18n,
-    Animation, Tinymce, FontSize, PreventDbclick, AntvXsix },
+    Animation, Tinymce, FontSize, PreventDbclick, AntvXsix, AntvDemo },
   data() {
     return {
       curIndex: 0

@@ -27,7 +27,8 @@ export default {
         { name: 'TinyMCE'},
         { name: '设置字体大小'},
         { name: '阻止按钮多次点击'},
-        { name: 'AntV | X6'}
+        { name: 'AntV | X6'},
+        { name: 'AntV | Demo'}
       ],
       curIndex: 0
     }

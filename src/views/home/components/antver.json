@@ -6,8 +6,8 @@
     "width": 150,
     "height": 24,
     "position": {
-      "x": 24,
-      "y": 150
+      "x": 40,
+      "y": 100
     },
     "ports": [
       {
@@ -67,8 +67,8 @@
     "width": 150,
     "height": 24,
     "position": {
-      "x": 250,
-      "y": 210
+      "x": 360,
+      "y": 100
     },
     "ports": [
       {
@@ -130,78 +130,6 @@
             "text": "STRING"
           }
         }
-      },
-      {
-        "id": "2-6",
-        "group": "list",
-        "attrs": {
-          "portNameLabel": {
-            "text": "TP_01"
-          },
-          "portTypeLabel": {
-            "text": "STRING"
-          }
-        }
-      },
-      {
-        "id": "2-7",
-        "group": "list",
-        "attrs": {
-          "portNameLabel": {
-            "text": "TP_02"
-          },
-          "portTypeLabel": {
-            "text": "STRING"
-          }
-        }
-      },
-      {
-        "id": "2-8",
-        "group": "list",
-        "attrs": {
-          "portNameLabel": {
-            "text": "TP_03"
-          },
-          "portTypeLabel": {
-            "text": "STRING"
-          }
-        }
-      },
-      {
-        "id": "2-9",
-        "group": "list",
-        "attrs": {
-          "portNameLabel": {
-            "text": "TP_04"
-          },
-          "portTypeLabel": {
-            "text": "STRING"
-          }
-        }
-      },
-      {
-        "id": "2-10",
-        "group": "list",
-        "attrs": {
-          "portNameLabel": {
-            "text": "TP_05"
-          },
-          "portTypeLabel": {
-            "text": "STRING"
-          }
-        }
-      },
-      {
-        "id": "2-11",
-        "group": "list",
-        "attrs": {
-          "portNameLabel": {
-            "text": "TP_06"
-          },
-          "portTypeLabel": {
-            "text": "STRING"
-          }
-        }
       }
     ]
   },
@@ -212,8 +140,8 @@
     "width": 150,
     "height": 24,
     "position": {
-      "x": 480,
-      "y": 350
+      "x": 680,
+      "y": 100
     },
     "ports": [
       {

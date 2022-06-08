@@ -118,7 +118,7 @@ export default {
     // 获取窗口高度
     getViewPortHeight() {
       this.viewPortHeight = (document.documentElement.clientHeight || document.body.clientHeight) - 128;
-      window.addEventListener("resize", () => {
+      window.addEventListener('resize', () => {
         this.viewPortHeight = (document.documentElement.clientHeight || document.body.clientHeight) - 128;
       });
     },
@@ -164,24 +164,6 @@ export default {
         }
       });
       graph.resetCells(cells);
-      graph.zoomToFit({ padding: 10, maxScale: 1 });
-
-      /*
-      fetch('https:/x6.antv.vision/zh/examples/data/er.json')
-        .then((response) => response.json())
-        .then((data) => {
-          const cells = []
-          data.forEach((item) => {
-            if (item.shape === 'edge') {
-              cells.push(graph.createEdge(item))
-            } else {
-              cells.push(graph.createNode(item))
-            }
-          })
-          graph.resetCells(cells)
-          graph.zoomToFit({ padding: 10, maxScale: 1 })
-        })
-      */
     }
   }
 }
