@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- Header -->
-    <Header @sendCurIndexFn="sendCurIndexFn"></Header>
+    <Header :curIndex="curIndex" @sendCurIndexFn="sendCurIndexFn"></Header>
     <!-- Footer -->
     <Footer></Footer>
     <!-- 三角形角标 -->
@@ -24,6 +24,8 @@
     <AntvXsix v-if="curIndex === 8"></AntvXsix>
     <!-- antv-demo -->
     <AntvDemo v-if="curIndex === 9"></AntvDemo>
+    <!-- upload-file -->
+    <UploadFile v-if="curIndex === 10"></UploadFile>
   </div>
 </template>
 
@@ -40,13 +42,15 @@ import FontSize from './components/font-size.vue'
 import PreventDbclick from './components/prevent-dbclick.vue'
 import AntvXsix from './components/antv-xsix.vue'
 import AntvDemo from './components/antv-demo.vue'
+import UploadFile from './components/upload-file.vue'
 
 export default {
   components: { Header, Footer, Angle, Step, ImageRotate, I18n,
-    Animation, Tinymce, FontSize, PreventDbclick, AntvXsix, AntvDemo },
+    Animation, Tinymce, FontSize, PreventDbclick, AntvXsix, AntvDemo,
+    UploadFile },
   data() {
     return {
-      curIndex: 0
+      curIndex: 10
     }
   },
   created() {

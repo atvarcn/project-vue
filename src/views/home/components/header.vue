@@ -15,6 +15,14 @@
 
 <script>
 export default {
+  props: {
+    curIndex: {
+      type: Number,
+      default: () => {
+        return 0;
+      }
+    }
+  },
   data() {
     return {
       logoUrl: require('../../../assets/logo.png'),
@@ -28,15 +36,14 @@ export default {
         { name: '设置字体大小'},
         { name: '阻止按钮多次点击'},
         { name: 'AntV | X6'},
-        { name: 'AntV | Demo'}
-      ],
-      curIndex: 0
+        { name: 'AntV | Demo'},
+        { name: '上传文件'},
+      ]
     }
   },
   methods: {
     menuChangeFn(index) {
-      this.curIndex = index;
-      this.$emit('sendCurIndexFn', this.curIndex);
+      this.$emit('sendCurIndexFn', index);
     }
   }
 }
