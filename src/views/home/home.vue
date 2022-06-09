@@ -25,7 +25,12 @@
     <!-- antv-demo -->
     <AntvDemo v-if="curIndex === 9"></AntvDemo>
     <!-- upload-file -->
-    <UploadFile v-if="curIndex === 10"></UploadFile>
+    <div v-show="curIndex === 10">
+      <el-button type="primary" style="margin: 20px" @click="dialogFlagFn">文件上传</el-button>
+      <UploadFile v-show="curIndex === 10"
+        :dialogFlag="dialogFlag"
+        @dialogCloseFn="dialogCloseFn"></UploadFile>
+    </div>
   </div>
 </template>
 
@@ -50,7 +55,8 @@ export default {
     UploadFile },
   data() {
     return {
-      curIndex: 10
+      curIndex: 10,
+      dialogFlag: false
     }
   },
   created() {
@@ -60,6 +66,15 @@ export default {
     // Header 点击事件
     sendCurIndexFn(curIndex) {
       this.curIndex = curIndex;
+    },
+    /*
+     * 文件上传
+     */
+    dialogFlagFn() {
+      this.dialogFlag = true;
+    },
+    dialogCloseFn() {
+      this.dialogFlag = false;
     }
   }
 }

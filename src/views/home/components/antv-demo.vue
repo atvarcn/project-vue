@@ -254,8 +254,7 @@ export default {
                   height: this.LINE_HEIGHT,
                   strokeWidth: 1,
                   stroke: '#5F95FF',
-                  fill: '#EFF4FF',
-                  // magnet: true
+                  fill: '#EFF4FF'
                 },
                 label: {
                   ref: 'body',
@@ -277,7 +276,7 @@ export default {
           return {
             position: {
               x: 0,
-              y: (index + 1) * this.LINE_HEIGHT,
+              y: (index + 1) * this.LINE_HEIGHT
             },
             angle: 0
           };
@@ -287,7 +286,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>
